@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".auth.activities.RegistrationActivity">
+
+
+    <ImageView
+        android:layout_width="@dimen/logo_size"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/bitmap" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="@string/registration_preview"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <com.github.rahatarmanahmed.cpv.CircularProgressView
+        android:id="@+id/cpv_reg_loader"
+        android:layout_width="@dimen/loaded_size"
+        android:layout_height="@dimen/loaded_size"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:cpv_animAutostart="true"
+        app:cpv_color="@color/colorPrimary"
+        app:cpv_indeterminate="true" />
+
+    <ScrollView
+        android:id="@+id/scroll_view_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edt_email_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                app:met_floatingLabel="highlight"
+                app:met_minCharacters="6"
+                app:met_singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edt_password_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                app:met_floatingLabel="highlight"
+                app:met_minCharacters="6"
+                app:met_singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edt_password_confirm_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                app:met_floatingLabel="highlight"
+                app:met_minCharacters="6"
+                app:met_singleLineEllipsis="true" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_registration_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/registred" />
+
+
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_entered_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/enter_preview"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/color_enter"
+        android:layout_marginBottom="8dp"/>
+</LinearLayout>

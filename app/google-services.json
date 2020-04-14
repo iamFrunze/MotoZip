@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "404110541492",
+    "firebase_url": "https://motozip-a530d.firebaseio.com",
+    "project_id": "motozip-a530d",
+    "storage_bucket": "motozip-a530d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404110541492:android:4bd2c2f004dbebbe738de1",
+        "android_client_info": {
+          "package_name": "com.byfrunze.motozip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "404110541492-j6ocp6q9u9m5a4mu6t256dnj3ii55iru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-yULT17rDSMP-jJA7GYW4ZeuGVq55rAI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "404110541492-j6ocp6q9u9m5a4mu6t256dnj3ii55iru.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

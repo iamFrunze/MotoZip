@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".auth.activities.LoginActivity">
+
+
+    <ImageView
+        android:layout_width="@dimen/logo_size"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="32dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/bitmap" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_person_black_24dp" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edt_email_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            app:met_floatingLabel="highlight"
+            app:met_singleLineEllipsis="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_lock_black_24dp" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edt_password_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            app:met_floatingLabel="highlight"
+            app:met_minCharacters="6"
+            app:met_singleLineEllipsis="true" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_entered_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/enter_preview"/>
+
+    <TextView
+        android:id="@+id/txt_registration_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/registration_preview"/>
+
+    <com.github.rahatarmanahmed.cpv.CircularProgressView
+        android:id="@+id/cpv_sign_in_loader"
+        android:layout_width="@dimen/loaded_size"
+        android:layout_height="@dimen/loaded_size"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:cpv_animAutostart="true"
+        app:cpv_color="@color/colorPrimary"
+        app:cpv_indeterminate="true" />
+
+</LinearLayout>
