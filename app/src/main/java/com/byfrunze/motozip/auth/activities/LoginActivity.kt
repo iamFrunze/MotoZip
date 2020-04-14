@@ -36,6 +36,9 @@ class LoginActivity : MvpAppCompatActivity(), SignInView {
             signInPresenter.signInUser(nameUser = nameUser, passwordUser = passwordUser)
 
         }
+        fab_to_reg_by_login.setOnClickListener{
+            startActivity(Intent(this, RegistrationActivity::class.java))
+        }
     }
 
     override fun signInSuccessfully() {

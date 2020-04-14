@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,30 +7,6 @@
     android:orientation="vertical"
     tools:context=".auth.activities.RegistrationActivity">
 
-
-    <ImageView
-        android:layout_width="@dimen/logo_size"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-        android:adjustViewBounds="true"
-        android:src="@drawable/bitmap" />
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp"
-        android:gravity="center"
-        android:text="@string/registration_preview"
-        android:textColor="@color/black"
-        android:textSize="24sp" />
 
     <com.github.rahatarmanahmed.cpv.CircularProgressView
         android:id="@+id/cpv_reg_loader"
@@ -51,6 +27,30 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/logo_size"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/bitmap" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="@string/registration_preview"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
 
             <com.rengwuxian.materialedittext.MaterialEditText
                 android:id="@+id/edt_email_reg"
@@ -104,18 +104,27 @@
                 android:layout_marginBottom="8dp"
                 android:text="@string/registred" />
 
-
         </LinearLayout>
     </ScrollView>
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_entered_reg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="gone"
-        android:text="@string/enter_preview"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="@color/color_enter"
-        android:layout_marginBottom="8dp"/>
-</LinearLayout>
+        android:text="@string/enter_preview"
+        android:visibility="gone" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_to_login_by_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:src="@drawable/ic_keyboard_arrow_left_white_24dp"
+        android:layout_margin="16dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -43,6 +43,9 @@ class RegistrationActivity : MvpAppCompatActivity(), RegView {
                 }
             }
         }
+        fab_to_login_by_reg.setOnClickListener{
+            startActivity(Intent(this, LoginActivity::class.java))
+        }
 
     }
 

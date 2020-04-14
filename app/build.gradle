@@ -93,6 +93,9 @@ dependencies {
 
     //Switcher
     implementation 'com.bitvale:switcher:1.0.9'
+
+    //PageIndicator
+    implementation 'com.romandanylyk:pageindicatorview:1.0.3'
 }
 repositories {
     mavenCentral()
