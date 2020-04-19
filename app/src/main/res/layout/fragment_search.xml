@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".content.fragments.SearchFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MotoZIP"
+        android:layout_margin="16dp"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+        android:id="@+id/bubble_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:padding="12dp"
+        android:background="@drawable/rounded_rect_white"
+        android:elevation="4dp"
+        app:bnc_mode="spread">
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/motor_top_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:bt_colorActive="@color/blue_active"
+            app:bt_colorInactive="@color/default_inactive"
+            app:bt_icon="@drawable/ic_motorcycle"
+            app:bt_shape="@drawable/transport_background_stroke"
+            app:bt_title="@string/moto" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/zip_top_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:bt_colorActive="@color/purple_active"
+            app:bt_colorInactive="@color/default_inactive"
+            app:bt_icon="@drawable/ic_zip"
+            app:bt_shape="@drawable/zip_background_stroke"
+            app:bt_title="@string/zip" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/review_top_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:bt_colorActive="@color/orange_active"
+            app:bt_colorInactive="@color/default_inactive"
+            app:bt_icon="@drawable/ic_review"
+            app:bt_shape="@drawable/review_background_stroke"
+            app:bt_title="@string/review" />
+    </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container_search"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+
+</LinearLayout>

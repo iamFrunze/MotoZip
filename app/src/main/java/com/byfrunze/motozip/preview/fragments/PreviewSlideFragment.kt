@@ -3,7 +3,6 @@ package com.byfrunze.motozip.preview.fragments
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,10 +14,7 @@ import com.byfrunze.motozip.R
 import com.byfrunze.motozip.auth.activities.LoginActivity
 import com.byfrunze.motozip.auth.activities.RegistrationActivity
 import com.byfrunze.motozip.content.NavActivity
-import com.byfrunze.motozip.preview.dataValues.resourceArray
-import kotlinx.android.synthetic.main.activity_preview.view.*
 import kotlinx.android.synthetic.main.fragment_preview_slideone.*
-import kotlinx.android.synthetic.main.fragment_preview_slideone.view.*
 
 private const val ARG_BACKGROUND_COLOR = "param1"
 private const val ARG_RESOURCE = "param2"

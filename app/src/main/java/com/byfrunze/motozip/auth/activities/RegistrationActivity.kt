@@ -2,16 +2,13 @@ package com.byfrunze.motozip.auth.activities
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
 import android.view.View
 import com.afollestad.materialdialogs.MaterialDialog
 import com.byfrunze.motozip.R
 import com.byfrunze.motozip.auth.helper.FBAuth
-import com.byfrunze.motozip.auth.models.DadataBody
 import com.byfrunze.motozip.auth.presenters.RegPresenter
 import com.byfrunze.motozip.auth.views.RegView
 import com.byfrunze.motozip.content.NavActivity
-import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_registration.*
 import moxy.MvpAppCompatActivity
 import moxy.presenter.InjectPresenter

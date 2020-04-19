@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation.xml"
+    app:startDestination="@id/nav_search">
+
+    <fragment
+        android:id="@+id/nav_search"
+        android:name="com.byfrunze.motozip.content.fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_nav_search_to_motorcycleFragment"
+            app:destination="@id/motorcycleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_add"
+        android:name="com.byfrunze.motozip.content.fragments.AddPostFragment"
+        android:label="fragment_add_post"
+        tools:layout="@layout/fragment_add_post" />
+    <fragment
+        android:id="@+id/nav_favourite"
+        android:name="com.byfrunze.motozip.content.fragments.FavouriteFragment"
+        android:label="fragment_favourite"
+        tools:layout="@layout/fragment_favourite" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.byfrunze.motozip.content.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_chat"
+        android:name="com.byfrunze.motozip.content.fragments.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/motorcycleFragment"
+        android:name="com.byfrunze.motozip.content.search.fragments.MotorcycleFragment"
+        android:label="fragment_motorcycle"
+        tools:layout="@layout/fragment_motorcycle" >
+        <action
+            android:id="@+id/action_motorcycleFragment_to_zipFragment"
+            app:destination="@id/zipFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/zipFragment"
+        android:name="com.byfrunze.motozip.content.search.fragments.ZipFragment"
+        android:label="fragment_zip"
+        tools:layout="@layout/fragment_zip" >
+        <action
+            android:id="@+id/action_zipFragment_to_motorcycleFragment"
+            app:destination="@id/motorcycleFragment" />
+        <action
+            android:id="@+id/action_zipFragment_to_reviewFragment"
+            app:destination="@id/reviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reviewFragment"
+        android:name="com.byfrunze.motozip.content.search.fragments.ReviewFragment"
+        android:label="fragment_review"
+        tools:layout="@layout/fragment_review" >
+        <action
+            android:id="@+id/action_reviewFragment_to_zipFragment"
+            app:destination="@id/zipFragment" />
+    </fragment>
+</navigation>
